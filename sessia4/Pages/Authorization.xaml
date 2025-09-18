@@ -12,6 +12,7 @@
         <Button x:Name="ButtonVhod" Content="Войти" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="40" Width="168" Click="ButtonVhod_Click"/>
         <PasswordBox x:Name="PBPassword" HorizontalAlignment="Center" VerticalAlignment="Center" Width="168" Height="40"/>
         <TextBox x:Name="TBLogin" HorizontalAlignment="Center" Margin="0,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Height="40"/>
+        <Button x:Name="ButtonVhodGost" Content="Войти как гость" HorizontalAlignment="Left" Margin="316,312,0,0" VerticalAlignment="Top" Height="74" Width="102" Click="ButtonVhodGost_Click" Background="#FFFEFF4E" FontWeight="Bold" Foreground="#FFFF0046"/>
 
     </Grid>
 </Page>
