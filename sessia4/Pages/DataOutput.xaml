@@ -9,6 +9,45 @@
       Title="DataOutput">
 
     <Grid>
-        
+        <ListView x:Name="listProducts">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="200"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding name}" FontWeight="Bold"/>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock>
+                                    <Run Text="Тип: "/>
+                                    <Run Text="{Binding type_products.type_prod}"/>
+                                </TextBlock>
+                                <TextBlock>
+                                    <Run Text="Артикул: "/>
+                                    <Run Text="{Binding articul}"/>
+                                </TextBlock>
+                                <TextBlock>
+                                    <Run Text="Количество человек на производстве: "/>
+                                    <Run Text="{Binding count_people_proizv}"/>
+                                </TextBlock>
+                                <TextBlock>
+                                    <Run Text="Номер цеха:"/>
+                                    <Run Text="{Binding number_ceh}"/>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock>
+                                    <Run Text="Минимальная стоимость:"/>
+                                    <Run Text="{Binding min_cost}"/>
+                                </TextBlock>
+                            </StackPanel>
+                        </Grid>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>    
+        </ListView>    
     </Grid>
 </Page>
